@@ -49,6 +49,7 @@ subtle borders to separate layers
 blue for focus and selection
 pink for emotional highlights and urgent accents
 warm shadows for depth without dark-mode heaviness
+transparent terminals to soften the light background
 ```
 
 ## Included

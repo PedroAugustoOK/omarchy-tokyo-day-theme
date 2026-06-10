@@ -30,3 +30,6 @@ cursor = "#25283a"
 [colors.selection]
 text = "#fffaf4"
 background = "#3b64c4"
+
+[window]
+opacity = 0.72
