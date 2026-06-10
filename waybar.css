@@ -1,9 +1,13 @@
 @define-color background #f7f1ea;
 @define-color foreground #2d3046;
-@define-color surface #eee6dc;
-@define-color surface-alt #e4d9d0;
+@define-color surface #fffaf4;
+@define-color surface-2 #eee6dc;
+@define-color surface-3 #e4d9d0;
+@define-color overlay #f0e8de;
 @define-color muted #75778b;
+@define-color subtle #9695a5;
 @define-color border #cfc2b8;
+@define-color shadow #24283b;
 @define-color accent #3b64c4;
 @define-color accent-alt #d86aa7;
 @define-color warning #9c6835;

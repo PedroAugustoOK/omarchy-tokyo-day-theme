@@ -1,8 +1,9 @@
 @define-color selected-text #2d3046;
 @define-color text #5f6376;
 @define-color base #f7f1ea;
-@define-color surface #eee6dc;
-@define-color surface-alt #e4d9d0;
+@define-color surface #fffaf4;
+@define-color surface-2 #eee6dc;
+@define-color surface-3 #e4d9d0;
 @define-color border #cfc2b8;
 @define-color accent #3b64c4;
 @define-color accent-alt #d86aa7;
@@ -30,21 +31,24 @@ window .symbols {
 }
 
 window .box-wrapper {
-    background: alpha(@base, 0.92);
+    background: alpha(@base, 0.90);
     border: 2px solid alpha(@border, 0.92);
-    border-radius: 7px;
-    padding: 5px;
+    border-radius: 8px;
+    padding: 6px;
     margin: 0;
-    box-shadow: 0 10px 30px alpha(#24283b, 0.18);
+    box-shadow:
+        0 18px 44px alpha(#24283b, 0.20),
+        0 2px 0 alpha(#ffffff, 0.55) inset;
     color: @text;
 }
 
 window .search-container {
-    border: 1px solid alpha(@accent, 0.36);
-    border-radius: 5px;
-    padding: 6px 8px;
-    background: alpha(@surface, 0.82);
+    border: 1px solid alpha(@accent, 0.34);
+    border-radius: 6px;
+    padding: 7px 9px;
+    background: alpha(@surface, 0.84);
     color: @selected-text;
+    box-shadow: 0 1px 0 alpha(#ffffff, 0.70) inset;
 }
 
 window .input {
@@ -53,19 +57,26 @@ window .input {
 }
 
 window .preview {
-    border: 1px solid alpha(@border, 0.74);
-    border-radius: 5px;
-    background: alpha(@surface, 0.76);
+    border: 1px solid alpha(@border, 0.72);
+    border-radius: 6px;
+    background: alpha(@surface-2, 0.76);
     color: @text;
     padding: 10px;
     margin: 10px 0;
+    box-shadow: 0 10px 24px alpha(#24283b, 0.10);
+}
+
+child {
+    border-radius: 6px;
 }
 
 child:selected {
-    border: 1px solid alpha(@accent, 0.46);
-    border-radius: 5px;
-    background-color: alpha(@accent, 0.12);
-    box-shadow: inset 3px 0 0 @accent-alt;
+    border: 1px solid alpha(@accent, 0.42);
+    border-radius: 6px;
+    background-color: alpha(@accent, 0.11);
+    box-shadow:
+        inset 3px 0 0 @accent-alt,
+        0 4px 14px alpha(#24283b, 0.10);
 }
 
 child:selected .item-box * {

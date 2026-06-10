@@ -1,8 +1,9 @@
 window {
-  background: alpha(#f7f1ea, 0.92);
+  background: alpha(#fffaf4, 0.92);
   border: 2px solid alpha(#3b64c4, 0.42);
-  border-radius: 7px;
+  border-radius: 8px;
   color: #2d3046;
+  box-shadow: 0 14px 34px alpha(#24283b, 0.18);
 }
 
 progressbar progress {
