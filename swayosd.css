@@ -1,0 +1,14 @@
+window {
+  background: alpha(#f7f1ea, 0.92);
+  border: 2px solid alpha(#3b64c4, 0.42);
+  border-radius: 7px;
+  color: #2d3046;
+}
+
+progressbar progress {
+  background: #d86aa7;
+}
+
+progressbar trough {
+  background: alpha(#cfc2b8, 0.58);
+}

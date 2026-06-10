@@ -1,0 +1,73 @@
+@define-color selected-text #2d3046;
+@define-color text #5f6376;
+@define-color base #f7f1ea;
+@define-color surface #eee6dc;
+@define-color surface-alt #e4d9d0;
+@define-color border #cfc2b8;
+@define-color accent #3b64c4;
+@define-color accent-alt #d86aa7;
+@define-color background #f7f1ea;
+
+window * {
+    all: unset;
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    color: @text;
+}
+
+window .normal-icons,
+window .large-icons,
+window .item-image,
+window .symbols {
+    -gtk-icon-size: 18px;
+    min-width: 0;
+    min-height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+window .box-wrapper {
+    background: alpha(@base, 0.92);
+    border: 2px solid alpha(@border, 0.92);
+    border-radius: 7px;
+    padding: 5px;
+    margin: 0;
+    box-shadow: 0 10px 30px alpha(#24283b, 0.18);
+    color: @text;
+}
+
+window .search-container {
+    border: 1px solid alpha(@accent, 0.36);
+    border-radius: 5px;
+    padding: 6px 8px;
+    background: alpha(@surface, 0.82);
+    color: @selected-text;
+}
+
+window .input {
+    background: transparent;
+    color: @selected-text;
+}
+
+window .preview {
+    border: 1px solid alpha(@border, 0.74);
+    border-radius: 5px;
+    background: alpha(@surface, 0.76);
+    color: @text;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+child:selected {
+    border: 1px solid alpha(@accent, 0.46);
+    border-radius: 5px;
+    background-color: alpha(@accent, 0.12);
+    box-shadow: inset 3px 0 0 @accent-alt;
+}
+
+child:selected .item-box * {
+    color: @selected-text;
+}
